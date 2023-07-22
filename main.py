@@ -1,19 +1,19 @@
 def isomorphic(s: str, t: str) -> bool:
     if len(s) != len(t):
         return False
-    list_s = {}
-    list_t = {}
+    dict_s = {}
+    dict_t = {}
 
     for s_elem, t_elem in zip(s, t):
-        if s_elem in list_s:
-            if list_s[s_elem] != t_elem:
+        if s_elem in dict_s:
+            if dict_s[s_elem] != t_elem:
                 return False
         else:
-            list_s[s_elem] = t_elem
+            dict_s[s_elem] = t_elem
 
-        if t_elem in list_t:
-            if list_t[t_elem] != s_elem:
+        if t_elem in dict_t:
+            if dict_t[t_elem] != s_elem:
                 return False
         else:
-            list_t[t_elem] = s_elem
+            dict_t[t_elem] = s_elem
     return True
