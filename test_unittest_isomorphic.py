@@ -12,7 +12,3 @@ class IsomorphicTestCase(unittest.TestCase):
         self.assertEqual(isomorphic("foo", "bar"), False)
         self.assertEqual(isomorphic("see", "sed"), False)
         self.assertEqual(isomorphic(", t = ", ""), False)
-
-
-if __name__ == '__main':
-    unittest.main()

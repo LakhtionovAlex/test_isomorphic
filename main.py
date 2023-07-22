@@ -17,7 +17,3 @@ def isomorphic(s: str, t: str) -> bool:
         else:
             list_t[t_elem] = s_elem
     return True
-
-
-if __name__ == '__main__':
-    print("Complete")
