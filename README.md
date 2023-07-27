@@ -2,7 +2,7 @@
 
 -----
 
-Run pytes:
+Run pytest:
 ```
 pytest
 ```
